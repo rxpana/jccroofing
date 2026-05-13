@@ -142,6 +142,24 @@
     .text-shadow-sm {
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
+
+    /* Dropdown Styles */
+    .nav-item {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
   </style>
   <!-- Top Navigation Bar -->
   <header
@@ -157,17 +175,103 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center gap-8">
-        <a class="text-sky-600 dark:text-sky-400 font-bold border-b-2 border-sky-600 pb-1 font-label-caps transition-colors duration-300"
-          href="#">Design 1</a>
-        <a class="text-slate-600 dark:text-slate-400 font-medium font-label-caps hover:text-orange-500 transition-colors duration-300"
-          href="#">Process</a>
-        <a class="text-slate-600 dark:text-slate-400 font-medium font-label-caps hover:text-orange-500 transition-colors duration-300"
-          href="#">Emergency</a>
-        <a class="text-slate-600 dark:text-slate-400 font-medium font-label-caps hover:text-orange-500 transition-colors duration-300"
-          href="#">Gallery</a>
-        <a class="text-slate-600 dark:text-slate-400 font-medium font-label-caps hover:text-orange-500 transition-colors duration-300"
-          href="index2.html">Design 2</a>
+      <div class="hidden lg:flex items-center gap-6">
+        <!-- Roof Installation -->
+        <div class="nav-item group py-4">
+          <a class="flex items-center gap-1 text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+            href="https://www.myroofimprovement.com/roof-replacement-in-houston/">
+            Roof Installation
+            <span class="material-symbols-outlined text-sm">expand_more</span>
+          </a>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-72 bg-white shadow-2xl rounded-2xl py-4 z-50 border border-slate-100 mt-2">
+            <a href="https://www.myroofimprovement.com/roof-replacement-in-houston/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Roof
+              Replacement</a>
+            <a href="https://www.myroofimprovement.com/houston/roof-replacement/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Commercial
+              Roof Replacement</a>
+            <a href="https://www.myroofimprovement.com/roofing-certifications/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Roofing
+              Certifications</a>
+            <a href="https://www.myroofimprovement.com/tomball/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Roofing
+              Contractor Tomball</a>
+          </div>
+        </div>
+
+        <!-- Repairs -->
+        <div class="nav-item group py-4">
+          <a class="flex items-center gap-1 text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+            href="https://www.myroofimprovement.com/roof-repair-company-in-houston/">
+            Repairs
+            <span class="material-symbols-outlined text-sm">expand_more</span>
+          </a>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-80 bg-white shadow-2xl rounded-2xl py-4 z-50 border border-slate-100 mt-2">
+            <a href="https://www.myroofimprovement.com/roof-repair-company-in-houston/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Most
+              Trusted Roof Repair Experts</a>
+            <a href="https://www.myroofimprovement.com/emergency-roof-repair-houston/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Emergency
+              Roof Repair Houston</a>
+            <a href="https://www.myroofimprovement.com/roof-repair-cost-guide/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Roof
+              Repair Cost Guide</a>
+            <a href="https://www.myroofimprovement.com/houston/roof-repairs/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Commercial
+              Roof Repairs</a>
+          </div>
+        </div>
+
+        <!-- Roof Maintenance -->
+        <a class="text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+          href="https://www.myroofimprovement.com/roof-maintenance-in-houston/">Roof Maintenance</a>
+
+        <!-- Storm Claims -->
+        <div class="nav-item group py-4">
+          <a class="flex items-center gap-1 text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+            href="https://www.myroofimprovement.com/roof-insurance-claims/">
+            Storm Claims
+            <span class="material-symbols-outlined text-sm">expand_more</span>
+          </a>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-72 bg-white shadow-2xl rounded-2xl py-4 z-50 border border-slate-100 mt-2">
+            <a href="https://www.myroofimprovement.com/houston-roof-damage-repair-insurance-claims/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Houston
+              Roof Damage Repair</a>
+          </div>
+        </div>
+
+        <!-- Financing -->
+        <a class="text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+          href="https://www.myroofimprovement.com/roof-financing-houston/">Financing</a>
+
+        <!-- About Us -->
+        <div class="nav-item group py-4">
+          <a class="flex items-center gap-1 text-slate-600 dark:text-slate-400 font-bold font-label-caps hover:text-secondary transition-colors duration-300"
+            href="https://www.myroofimprovement.com/about-us/">
+            About Us
+            <span class="material-symbols-outlined text-sm">expand_more</span>
+          </a>
+          <div
+            class="dropdown-menu absolute top-full right-0 w-64 bg-white shadow-2xl rounded-2xl py-4 z-50 border border-slate-100 mt-2">
+            <a href="https://www.myroofimprovement.com/contact-us/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Contact
+              us</a>
+            <a href="https://www.myroofimprovement.com/service-areas/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Service
+              Areas</a>
+            <a href="https://www.myroofimprovement.com/blog/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Blog</a>
+            <a href="https://www.myroofimprovement.com/our-projects/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Our
+              Projects</a>
+            <a href="https://www.myroofimprovement.com/roofing-faqs/"
+              class="block px-6 py-2.5 text-sm font-bold text-on-surface hover:bg-slate-50 hover:text-secondary transition-colors">Roofing
+              FAQ's</a>
+          </div>
+        </div>
       </div>
 
       <!-- Action Area -->
@@ -193,7 +297,7 @@
 
         <!-- Hamburger Menu -->
         <button id="mobile-menu-trigger" aria-label="Open Menu"
-          class="flex md:hidden w-10 h-10 items-center justify-center text-on-surface active:scale-90 transition-transform">
+          class="flex lg:hidden w-10 h-10 items-center justify-center text-on-surface active:scale-90 transition-transform">
           <span class="material-symbols-outlined text-3xl">menu</span>
         </button>
       </div>
@@ -209,27 +313,149 @@
 
     <!-- Menu Content -->
     <div id="mobile-menu-content"
-      class="absolute top-0 right-0 w-[280px] h-full bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col">
-      <div class="p-6 border-b border-slate-100 flex justify-between items-center">
-        <span class="font-bold text-slate-400 uppercase tracking-widest text-xs">Menu</span>
-        <button id="mobile-menu-close" class="p-2 text-slate-400 hover:text-primary transition-colors">
+      class="absolute top-0 right-0 w-[320px] h-full bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col">
+      <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
+        <div class="flex items-center gap-3">
+          <img
+            src="https://www.myroofimprovement.com/wp-content/uploads/2025/11/JCC-Roofing-Company-in-Houston-Main-New-Logo-1024x1024.webp"
+            alt="Logo" class="h-8 w-auto">
+          <span class="font-black text-primary text-sm tracking-tighter uppercase">Menu</span>
+        </div>
+        <button id="mobile-menu-close"
+          class="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm text-slate-400 hover:text-primary transition-all active:scale-90">
           <span class="material-symbols-outlined">close</span>
         </button>
       </div>
-      <div class="flex flex-col p-6 gap-6">
-        <a class="text-xl font-bold text-primary" href="#">Design 1</a>
-        <a class="text-lg font-medium text-on-surface hover:text-primary transition-colors" href="#">Process</a>
-        <a class="text-lg font-medium text-on-surface hover:text-primary transition-colors" href="#">Emergency</a>
-        <a class="text-lg font-medium text-on-surface hover:text-primary transition-colors" href="#">Gallery</a>
-        <a class="text-lg font-medium text-on-surface hover:text-primary transition-colors" href="index2.html">Design
-          2</a>
-      </div>
-      <div class="mt-auto p-6 bg-slate-50 flex flex-col gap-4">
-        <a href="tel:7137663464" class="flex items-center gap-3 text-primary font-bold">
-          <span class="material-symbols-outlined">call</span>
-          (713) ROOFING
+
+      <div class="flex-grow overflow-y-auto px-6 py-8 flex flex-col gap-8">
+        <!-- Roof Installation -->
+        <div class="flex flex-col gap-3">
+          <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+            href="https://www.myroofimprovement.com/roof-replacement-in-houston/">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined">roofing</span>
+            </div>
+            Roof Installation
+          </a>
+          <div class="pl-13 flex flex-col gap-2 ml-10">
+            <a href="https://www.myroofimprovement.com/roof-replacement-in-houston/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Roof
+              Replacement</a>
+            <a href="https://www.myroofimprovement.com/houston/roof-replacement/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Commercial
+              Replacement</a>
+            <a href="https://www.myroofimprovement.com/roofing-certifications/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Roofing
+              Certifications</a>
+            <a href="https://www.myroofimprovement.com/tomball/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Contractor
+              Tomball</a>
+          </div>
+        </div>
+
+        <!-- Repairs -->
+        <div class="flex flex-col gap-3">
+          <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+            href="https://www.myroofimprovement.com/roof-repair-company-in-houston/">
+            <div
+              class="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined">build</span>
+            </div>
+            Roof Repairs
+          </a>
+          <div class="pl-13 flex flex-col gap-2 ml-10">
+            <a href="https://www.myroofimprovement.com/roof-repair-company-in-houston/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Trusted Repair
+              Experts</a>
+            <a href="https://www.myroofimprovement.com/emergency-roof-repair-houston/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Emergency
+              Repair</a>
+            <a href="https://www.myroofimprovement.com/roof-repair-cost-guide/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Repair Cost
+              Guide</a>
+            <a href="https://www.myroofimprovement.com/houston/roof-repairs/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Commercial
+              Repairs</a>
+          </div>
+        </div>
+
+        <!-- Roof Maintenance -->
+        <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+          href="https://www.myroofimprovement.com/roof-maintenance-in-houston/">
+          <div
+            class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all">
+            <span class="material-symbols-outlined">fact_check</span>
+          </div>
+          Roof Maintenance
         </a>
-        <p class="text-xs text-on-surface-variant font-medium">JC&C Roofing Company - Roofing Experts</p>
+
+        <!-- Storm Claims -->
+        <div class="flex flex-col gap-3">
+          <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+            href="https://www.myroofimprovement.com/roof-insurance-claims/">
+            <div
+              class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+              <span class="material-symbols-outlined">monetization_on</span>
+            </div>
+            Storm Claims
+          </a>
+          <div class="pl-13 flex flex-col gap-2 ml-10">
+            <a href="https://www.myroofimprovement.com/houston-roof-damage-repair-insurance-claims/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Damage Repair
+              Claims</a>
+          </div>
+        </div>
+
+        <!-- Financing -->
+        <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+          href="https://www.myroofimprovement.com/roof-financing-houston/">
+          <div
+            class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-all">
+            <span class="material-symbols-outlined">payments</span>
+          </div>
+          Roof Financing
+        </a>
+
+        <!-- About Us -->
+        <div class="flex flex-col gap-3">
+          <a class="flex items-center gap-3 text-lg font-black text-on-surface hover:text-primary transition-colors group"
+            href="https://www.myroofimprovement.com/about-us/">
+            <div
+              class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 group-hover:bg-slate-600 group-hover:text-white transition-all">
+              <span class="material-symbols-outlined">info</span>
+            </div>
+            About Us
+          </a>
+          <div class="pl-13 flex flex-col gap-2 ml-10">
+            <a href="https://www.myroofimprovement.com/contact-us/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Contact us</a>
+            <a href="https://www.myroofimprovement.com/service-areas/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Service Areas</a>
+            <a href="https://www.myroofimprovement.com/blog/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Blog</a>
+            <a href="https://www.myroofimprovement.com/our-projects/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Our Projects</a>
+            <a href="https://www.myroofimprovement.com/roofing-faqs/"
+              class="text-[15px] font-bold text-slate-500 hover:text-secondary py-1 transition-colors">Roofing FAQ's</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-auto p-8 bg-slate-900 text-white flex flex-col gap-6 rounded-t-[2.5rem] shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 -mr-16 -mt-16 rounded-full blur-3xl"></div>
+        <div class="relative z-10">
+          <a href="tel:7137663464"
+            class="orange-power-button w-full py-4 rounded-2xl flex items-center justify-center gap-3 shadow-xl">
+            <span class="material-symbols-outlined">call</span>
+            <span class="font-black">(713) ROOFING</span>
+          </a>
+          <div class="mt-6 flex flex-col items-center gap-1 opacity-60">
+            <p class="text-[10px] font-bold uppercase tracking-[0.2em]">Houston's Go-To Experts</p>
+            <p class="text-[9px] font-medium italic">JC&C Roofing Company • Since 2013</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -239,7 +465,7 @@
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover"
-        data-alt="A professional architectural photograph of a high-end residential home in Houston featuring a pristine new asphalt shingle roof. The scene is captured during the golden hour with warm, soft sunlight enhancing the textures of the gray roofing material and the clean white siding. The overall aesthetic is bright and aspirational, reflecting a corporate yet welcoming atmosphere with deep blue sky in the background and professional landscaping in the foreground."
+        alt="A professional architectural photograph of a high-end residential home in Houston featuring a pristine new asphalt shingle roof. The scene is captured during the golden hour with warm, soft sunlight enhancing the textures of the gray roofing material and the clean white siding. The overall aesthetic is bright and aspirational, reflecting a corporate yet welcoming atmosphere with deep blue sky in the background and professional landscaping in the foreground."
         src="https://www.myroofimprovement.com/wp-content/uploads/2025/11/scale-hero-test.webp" />
       <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-transparent"></div>
     </div>
@@ -314,7 +540,7 @@
           <div class="flex items-start gap-6 mb-6">
             <div class="relative shrink-0">
               <img class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
-                data-alt="A professional headshot of a friendly roofing expert named Colter, wearing a branded company polo shirt. He has a warm, confident smile and is standing in front of a subtly blurred background of a modern residential neighborhood in Houston. The lighting is professional studio-quality, conveying trust, local expertise, and approachable professionalism in a high-end corporate style."
+                alt="A professional headshot of a friendly roofing expert named Colter, wearing a branded company polo shirt. He has a warm, confident smile and is standing in front of a subtly blurred background of a modern residential neighborhood in Houston. The lighting is professional studio-quality, conveying trust, local expertise, and approachable professionalism in a high-end corporate style."
                 src="https://www.myroofimprovement.com/wp-content/uploads/2025/07/JCC-roofing-pet-Colter-Surprised.webp" />
               <div class="absolute bottom-0 right-0 bg-green-500 w-6 h-6 rounded-full border-4 border-white">
               </div>
@@ -367,63 +593,7 @@
       </div>
     </div>
   </section>
-  <!-- Trust Panel -->
-  <section class="bg-surface-container py-12">
-    <div class="max-w-7xl mx-auto px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
-        <div class="flex items-center gap-4 border-r border-slate-200 pr-8">
-          <div class="bg-white p-3 rounded-lg shadow-sm">
-            <span class="material-symbols-outlined text-blue-800 text-4xl"
-              data-icon="workspace_premium">workspace_premium</span>
-          </div>
-          <div>
-            <div class="font-label-bold">BBB A+ Accredited</div>
-            <div class="text-sm text-on-surface-variant">12 Years • 0 Complaints</div>
-            <a href="https://www.bbb.org/us/tx/houston/profile/roofing-contractors/jcc-roofing-company-0915-90035040"
-              class="text-[10px] text-primary font-bold hover:underline block mt-1" target="_blank" rel="noopener">
-              Verify Rating →
-            </a>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 border-r border-slate-200 pr-8">
-          <div class="bg-white p-3 rounded-lg shadow-sm">
-            <span class="material-symbols-outlined text-yellow-500 text-4xl" data-icon="star_rate"
-              data-weight="fill">star_rate</span>
-          </div>
-          <div>
-            <div class="font-label-bold">4.8/5 Verified Rating</div>
-            <div class="text-sm text-on-surface-variant">539+ Authentic Reviews</div>
-            <a href="https://www.trustindex.io/reviews/myroofimprovement.com"
-              class="text-[10px] text-primary font-bold hover:underline block mt-1" target="_blank" rel="noopener">
-              Read Reviews →
-            </a>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 border-r border-slate-200 pr-8">
-          <div class="bg-white p-3 rounded-lg shadow-sm">
-            <span class="material-symbols-outlined text-red-700 text-4xl"
-              data-icon="shield_with_house">shield_with_house</span>
-          </div>
-          <div>
-            <div class="font-label-bold">GAF Master Elite®</div>
-            <div class="text-sm text-on-surface-variant">Top 2% Nationwide</div>
-            <a href="https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/houston/jcc-roofing-company-1103708"
-              class="text-[10px] text-primary font-bold hover:underline block mt-1" target="_blank" rel="noopener">
-              Verify Status →
-            </a>
-          </div>
-        </div>
-        <div class="flex justify-between items-center gap-4">
-          <img src="https://www.myroofimprovement.com/wp-content/uploads/2024/02/GAF-Master-Elite-logo.webp"
-            alt="GAF Master Elite" class="h-8 w-auto object-contain" />
-          <img src="https://www.myroofimprovement.com/wp-content/uploads/2025/12/BBB-.png" alt="BBB Accredited Business"
-            class="h-8 w-auto object-contain" />
-          <img src="https://www.myroofimprovement.com/wp-content/uploads/2026/03/rcat-logo.webp"
-            alt="RCAT Licensed Roofing Contractor" class="h-8 w-auto object-contain" />
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- Emergency Services Grid -->
   <section class="py-section-gap bg-surface">
     <div class="max-w-[1280px] mx-auto px-6 md:px-12">
@@ -628,8 +798,9 @@
       </div>
       <div class="order-1 lg:order-2 relative">
         <div class="rounded-3xl overflow-hidden border-8 border-white/5 relative z-10">
-          <img alt="Founders Jennifer and Christian Hernandez" class=""
-            data-alt="A professional corporate portrait of Jennifer and Christian Hernandez, the founders of JC&amp;C Roofing. They are standing confidently in front of a modern architectural backdrop, dressed in professional business-casual attire. The lighting is warm and welcoming, with a shallow depth of field that keeps the focus on their friendly, trustworthy expressions. The color palette is professional, featuring deep blues and crisp whites."
+          <img
+            alt="A professional corporate portrait of Jennifer and Christian Hernandez, the founders of JC&C Roofing. They are standing confidently in front of a modern architectural backdrop, dressed in professional business-casual attire. The lighting is warm and welcoming, with a shallow depth of field that keeps the focus on their friendly, trustworthy expressions. The color palette is professional, featuring deep blues and crisp whites."
+            class=""
             src="https://www.myroofimprovement.com/wp-content/uploads/2026/04/JCC-Roofing-Company-founders-Christian-Jennifer-Hernandez-scaled.webp" />
         </div>
         <!-- Glassmorphism Badge -->
@@ -992,8 +1163,10 @@
               </div>
             </li>
           </ul>
-          <button id="tab-cta" class="orange-power-button px-8 py-4 rounded-xl text-white font-bold">Schedule Repair
-            Now</button>
+          <a id="tab-cta" href="https://www.myroofimprovement.com/roof-repair-company-in-houston/"
+            class="orange-power-button px-8 py-4 rounded-xl text-white font-bold inline-block text-center">Schedule
+            Repair
+            Now</a>
         </div>
         <div class="rounded-2xl overflow-hidden aspect-square shadow-xl">
           <img id="tab-image" alt="Roofing Services" class="w-full h-full object-cover transition-all duration-500"
@@ -1348,10 +1521,6 @@
           <h2 class="font-display text-headline-md text-slate-500">Serving The Greater Houston Area
           </h2>
           <p class="font-display text-display text-on-surface mb-2">Colter Jose & the JC&C Roofing Team</p>
-          <a href="https://www.myroofimprovement.com/service-areas/"
-            class="inline-flex items-center gap-2 mt-4 px-6 py-3.5 bg-primary text-white rounded-xl font-bold text-sm hover:bg-on-primary-fixed-variant transition-all shadow-lg shadow-primary/20 group active:scale-95">
-            View Service Areas
-          </a>
         </div>
         <div class="text-right hidden lg:block">
           <p class="text-on-surface-variant max-w-xs font-body-md leading-relaxed">
@@ -1414,11 +1583,16 @@
               County</span>
             <span
               class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Fort
-              Bend</span>
+              Bend County</span>
             <span
-              class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Montgomery</span>
+              class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Montgomery
+              County</span>
             <span
-              class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Brazoria</span>
+              class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Brazoria
+              County</span>
+            <span
+              class="bg-white/90 backdrop-blur text-on-surface px-3 py-1 rounded-full text-[10px] font-bold border border-outline-variant shadow-sm">Waller
+              County</span>
           </div>
         </div>
         <!-- Side Cards (Regional Info) -->
@@ -1465,7 +1639,10 @@
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Sugar
                 Land</span>
               <span
-                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Memorial</span>
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Sienna</span>
+              <span
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Memorial
+                Villages</span>
               <span
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Richmond</span>
             </div>
@@ -1483,14 +1660,19 @@
               roofing needs.</p>
             <div class="flex flex-wrap gap-2">
               <span
-                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">The
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Tomball
+                & The
                 Woodlands</span>
               <span
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Spring</span>
               <span
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Cypress</span>
               <span
-                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Tomball</span>
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Klein</span>
+              <span
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Conroe</span>
+              <span
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Champions</span>
             </div>
           </div>
           <!-- Region Card 4 -->
@@ -1508,13 +1690,13 @@
               <span
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Pearland</span>
               <span
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Friendswood</span>
+              <span
                 class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Humble</span>
               <span
-                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">League
-                City</span>
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Atascocita</span>
               <span
-                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Clear
-                Lake</span>
+                class="bg-surface-container text-on-surface-variant px-2 py-1 rounded text-[10px] font-bold uppercase">Kingwood</span>
             </div>
           </div>
         </div>
@@ -1537,10 +1719,10 @@
             </div>
           </div>
           <div class="flex flex-col gap-3 w-full md:w-auto">
-            <button
-              class="orange-power-button px-8 py-4 rounded-xl text-white font-black text-lg transition-all whitespace-nowrap">
-              Schedule Your Inspection
-            </button>
+            <a href="https://www.myroofimprovement.com/service-areas/" target="_blank" rel="noopener noreferrer"
+              class="orange-power-button px-8 py-4 rounded-xl text-white font-black text-lg transition-all whitespace-nowrap text-center">
+              View Service Areas
+            </a>
             <p class="text-[10px] uppercase tracking-widest text-center text-slate-400 font-bold">Local
               Authority •
               BBB A+ Rated</p>
@@ -1641,41 +1823,7 @@
       </div>
     </div>
   </section>
-  <!-- Credentials Section -->
-  <section class="py-20 bg-white">
-    <div class="max-w-[1280px] mx-auto px-6 md:px-12">
-      <div
-        class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
-        <div class="flex flex-col items-center gap-2">
-          <img alt="GAF Logo" class="h-16 object-contain"
-            data-alt="A stylized, professional logo placeholder for GAF Master Elite certification, featuring clean typography and a metallic gold seal. The design suggests high-end industry authority and excellence in roofing manufacturing. The background is a clean white, suitable for a corporate brand section."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXJqSVGYb5Xf1uEDUN2DeT2lR_yyxTndHOlwJbf2vTMbuwO6tCkxRyy0Wp8_o90YokMSED17NB7Vl3H0wloEYEELHXU2K-7VVlOmTZpSTu2wYkHorO8WQIfUPPjv6lpjOL-G_nuwvZJ1ihk0tcM0Z0Et_cGbNYVgRVY8TrJpCNaLT7H8s1bf_om9UssHOvR6GHvLUVDRM58_TiGK1IVIs1vUIHfFbLI9FrKcWeP-o9WE-g7nkKfVNwkbDQZvSjk_nxXYFapt67dsA" />
-          <span class="text-[10px] font-black font-label-caps text-on-surface-variant">TOP 2%
-            NATIONWIDE</span>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <img alt="BBB Logo" class="h-16 object-contain"
-            data-alt="A professional A+ Better Business Bureau accreditation seal logo. The design is crisp and clean, representing high ethical standards and zero complaints. The image is rendered with a slight glassmorphic shadow, fitting the modern UI style of the webpage."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLdolaIC8_qAxdpuzMoh_UrvQFB0FiS5RSmuT1y_QlxkL8Hb9KS1NqyxVyjEDy3xVkpwr48Kc2vhkwfPG5hoPPH4xOLSqhXE9fl7YrqgIsozDNv7E9ZsDs3yu6iNG_6xbLyx0iiV5MPuWZNFiRQ7gFGXUCmyWBauuQ_zN7Vof7GUqbJGEu1TFfxJFmVH2oOU2ECfCM8hGjz46No1TfLd5DTirbGnBk_RfwrdkFd_nxJ3sBmucOYXxE16LEF3FROh_0t7CZJcG12mU" />
-          <span class="text-[10px] font-black font-label-caps text-on-surface-variant">A+ RATING</span>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <img alt="Fortis Logo" class="h-16 object-contain"
-            data-alt="A sleek corporate logo for the Fortis System, utilizing bold geometric shapes and a professional blue color palette. The logo conveys strength, durability, and technological advancement in roofing systems. It is set against a clean, neutral background for a premium feel."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxlVBv_Gkbt4Xzd2tHDWa6DEL3etc60GPLhyniNP5EbzqCYOP57KZPQ9w1HLyj6oFBN9KU9MvJloNrx1c2s9Zli9N1KkRzTvflTMnVMRC5uM_u3yck2UQq8G9spaiSYjFUKyfb3WFMPLZ3FkmUeexLO53IT6W3-tZoMVDnMF3jMMpZdfHr0q06H-v-W-lugYN50xiaXUb-w3VE0oS5rN3neuuQEMpKnwPs-zMEqmVcRZPx3le6NSu1nJ8Ucn3Z3e4s29aT7mR_gu0" />
-          <span class="text-[10px] font-black font-label-caps text-on-surface-variant">CERTIFIED
-            INSTALLER</span>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <img alt="Trustindex" class="h-16 object-contain"
-            data-alt="A clean, digital trust badge for Trustindex, showing a 4.8-star rating with verified customer reviews. The UI of the badge is minimalist, featuring professional typography and soft blue accents that align with the JC&amp;C Roofing brand identity."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFek-q4APWRS2XBD7PyXSN0S8NXAk6_yICmdPuWZfdhknmRJPDbQFviFT0ihUeDmlkQf9pwhmbYt6Q9oTCUjIYPsymfgIc9IXpC3nJeXekeo7Z8rg43bTGpprcpv5GD_NaThlr1quYjD2cQw4J0nhZRAOMQhOUt9fl1qJ9tWv9k7VmC21NsKyyFyHxGN_bsbx6wyISSZc8ExJ3Dldfpk1hXEiimzE96quylosE7FM5KArfkB78MxYoB08qKZxk5dtImYfPdg5nZ3o" />
-          <span class="text-[10px] font-black font-label-caps text-on-surface-variant">500+ VERIFIED
-            REVIEWS</span>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section class="py-section-gap bg-white">
     <div class="max-w-[1280px] mx-auto px-6 md:px-12">
       <div class="flex flex-col lg:flex-row overflow-hidden rounded-[3rem] shadow-2xl">
@@ -2328,55 +2476,7 @@
       </div>
     </div>
   </section>
-  <!-- Multi-step Form Section -->
-  <section class="py-section-gap bg-surface relative overflow-hidden">
-    <div class="max-w-[1000px] mx-auto px-6">
-      <div
-        class="bg-white rounded-3xl shadow-[0px_40px_80px_rgba(0,50,100,0.1)] p-8 md:p-16 relative z-10 border border-outline-variant/30">
-        <div class="mb-12">
-          <div class="flex justify-between items-end mb-4">
-            <h2 class="font-display text-headline-lg">Menu de Gravity (solo para referencia visual)</h2>
-            <span class="text-primary font-bold">Step 1 of 3</span>
-          </div>
-          <div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
-            <div class="bg-primary-container h-full w-1/3 relative transition-all duration-500">
-              <!-- Colter Progress Indicator -->
-              <img alt="Colter Progress"
-                class="absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-white shadow-md translate-x-4"
-                data-alt="A small, simplified avatar of Colter the mascot, showing him in his white hard hat and blue uniform. He is smiling and looking forward, used as a progress indicator for a digital form. The style is clean, high-quality digital art that matches the other mascot appearances on the site."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk_Pou3JFMD9FyTIcecCKt2yWNH2o9QdvtiU1IMvTVctp03JX-q7XOmj0QYgspuwwyllIRFXsY5gpWz2Ra3DI-AqyUweIQJfp2OaBmmPlVtbnpZsqOVPu5t8OdY7zNdgSOfuugvVXUdE8sYcq2GgT5Fy2T7S7HJrP_zCXXW197zW344PwB4VYl6KbKGosMTxRlV1VqNIjtn1X7KVraXEfkTdsueDMKbqIDsMXQhXKXCCWU7evyKdVftMvr5uIFqMZkLw8dtfLYSWk" />
-            </div>
-          </div>
-        </div>
-        <form class="space-y-8">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <label class="block font-bold mb-2 text-on-surface">Your Zip Code</label>
-              <input
-                class="w-full p-4 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-primary transition-all"
-                placeholder="e.g. 77001" type="text" />
-            </div>
-            <div>
-              <label class="block font-bold mb-2 text-on-surface">Service Type</label>
-              <select
-                class="w-full p-4 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-primary transition-all">
-                <option>Emergency Repair</option>
-                <option>Full Replacement</option>
-                <option>Inspection</option>
-              </select>
-            </div>
-          </div>
-          <div class="bg-surface-container p-6 rounded-2xl flex items-center gap-6">
-            <span class="material-symbols-outlined text-4xl text-primary">location_on</span>
-            <p class="text-sm font-medium text-on-surface-variant">We currently have 3 crews active in the
-              <span class="font-bold text-on-surface">Houston Heights</span> area. Your estimated response
-              time:
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
+
   <section class="py-section-gap bg-white overflow-hidden">
     <div class="max-w-[1280px] mx-auto px-6 md:px-12">
       <!-- Section Header -->
@@ -3151,13 +3251,17 @@
                 <div>
                   <p class="font-bold text-on-surface mb-2">Factors affecting timeline:</p>
                   <ul class="text-sm space-y-1">
-                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">circle</span>
+                    <li class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-xs">chevron_right</span>
                       Roof size and complexity</li>
-                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">circle</span>
+                    <li class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-xs">chevron_right</span>
                       Weather conditions</li>
-                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">circle</span>
+                    <li class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-xs">chevron_right</span>
                       Material availability</li>
-                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">circle</span>
+                    <li class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-xs">chevron_right</span>
                       Additional repairs needed</li>
                   </ul>
                 </div>
@@ -3411,8 +3515,8 @@
             <div
               class="relative z-10 bg-white p-2 md:p-4 rounded-[3.5rem] shadow-[0px_50px_100px_rgba(0,0,0,0.15)] border border-outline-variant/20 overflow-hidden">
               <div class="rounded-[2.5rem] overflow-hidden aspect-video relative group/vid">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/gnV7iKzCZjE" title="KPRC2 Interview"
-                  frameborder="0"
+                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/gnV7iKzCZjE"
+                  title="KPRC2 Interview" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
@@ -3519,10 +3623,10 @@
     <footer class="relative mt-20 mb-0 p-0 bg-[#0b1c30]">
       <!-- Map Section -->
       <div class="w-full h-[400px] bg-slate-200 relative overflow-hidden">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110433.84277716947!2d-95.68341999999999!3d30.093419999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640cd5d5a5a5a5b%3A0x5a5a5a5a5a5a5a5a!2s1431+Graham+Dr+%23266%2C+Tomball%2C+TX+77375!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-          class="w-full h-full grayscale hover:grayscale-0 transition-all duration-700" style="border:0;"
-          allowfullscreen="" loading="lazy"></iframe>
+        <iframe allow="geolocation" frameborder="0"
+          style="width:100%; height:400px; border-radius:20px; overflow:hidden;"
+          src="https://www.zeemaps.com/pub?group=6771554" title="JC&C Roofing Service Area Map">
+        </iframe>
       </div>
 
       <!-- Logo Overlay -->
@@ -3561,21 +3665,31 @@
 
           <!-- Links Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <!-- Column 1: Our Company -->
+            <!-- Column 1: Our Company & Resources -->
             <div>
               <h4 class="text-secondary font-black uppercase tracking-widest text-xs mb-6">Our Company
               </h4>
+              <ul class="space-y-4 text-slate-400 text-sm font-medium mb-8">
+                <li><a href="https://www.myroofimprovement.com/about-us/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="https://www.myroofimprovement.com/roofing-careers/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Careers</a></li>
+                <li><a href="https://www.myroofimprovement.com/blog/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors">Blog</a></li>
+              </ul>
+              <h4 class="text-secondary font-black uppercase tracking-widest text-xs mb-6">Resources</h4>
               <ul class="space-y-4 text-slate-400 text-sm font-medium">
-                <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Resources</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roofing FAQs</a></li>
-                <li><a href="#" class="hover:text-secondary transition-colors font-bold text-white">#ROOF4BRAVES</a>
+                <li><a href="https://www.myroofimprovement.com/roofing-faqs/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors">Roofing FAQs</a></li>
+                <li><a href="https://www.myroofimprovement.com/houston-roof4braves/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-secondary transition-colors font-bold text-white">#ROOF4BRAVES</a>
                 </li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Replacement Cost
+                <li><a href="https://www.myroofimprovement.com/roof-replacement-cost-estimate/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Replacement Cost
                     Estimate</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Repair Cost Guide</a>
+                <li><a href="https://www.myroofimprovement.com/roof-repair-cost-guide/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Repair Cost Guide</a>
                 </li>
               </ul>
             </div>
@@ -3584,13 +3698,20 @@
             <div>
               <h4 class="text-secondary font-black uppercase tracking-widest text-xs mb-6">Services</h4>
               <ul class="space-y-4 text-slate-400 text-sm font-medium">
-                <li><a href="#" class="hover:text-white transition-colors">Roof Repair</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Replacement</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Financing</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Maintenance</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Roof Inspections</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Insurance Claims</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">Emergency Roof Repairs</a>
+                <li><a href="https://www.myroofimprovement.com/roof-repair-company-in-houston/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Repair</a></li>
+                <li><a href="https://www.myroofimprovement.com/roof-replacement-in-houston/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Replacement</a></li>
+                <li><a href="https://www.myroofimprovement.com/roof-financing-houston/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Financing</a></li>
+                <li><a href="https://www.myroofimprovement.com/roof-maintenance-in-houston/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Maintenance</a></li>
+                <li><a href="https://www.myroofimprovement.com/free-roof-inspection-houston/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Roof Inspections</a></li>
+                <li><a href="https://www.myroofimprovement.com/roof-insurance-claims/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Insurance Claims</a></li>
+                <li><a href="https://www.myroofimprovement.com/roof-insurance-claims/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-white transition-colors">Emergency Roof Repairs</a>
                 </li>
               </ul>
             </div>
@@ -3644,7 +3765,8 @@
                   <span class="material-symbols-outlined text-secondary text-xl">mail</span>
                   <div>
                     <p class="text-white font-bold mb-1">Email</p>
-                    <p class="hover:text-white transition-colors">hello@jccroofing.com</p>
+                    <a href="mailto:hello@jccroofing.com"
+                      class="hover:text-white transition-colors">hello@jccroofing.com</a>
                   </div>
                 </div>
                 <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50 flex items-center gap-3 mt-8">
@@ -3753,6 +3875,7 @@
             { title: "Same-Day Service Available", detail: "Rapid response for active leaks in Houston and Katy." }
           ],
           cta: "Schedule Repair Now",
+          url: "https://www.myroofimprovement.com/roof-repair-company-in-houston/",
           image: "https://www.myroofimprovement.com/wp-content/uploads/2025/04/Houstons-roof-repair-company.webp"
         },
         replacement: {
@@ -3763,6 +3886,7 @@
             { title: "Certified Installation", detail: "Only the top 2% of contractors hold this credential." }
           ],
           cta: "Get Your Estimate",
+          url: "https://www.myroofimprovement.com/roof-replacement-in-houston/",
           image: "https://www.myroofimprovement.com/wp-content/uploads/2023/08/aeb5b866-853a-4ff9-be6a-91ec895a8fa9.webp"
         },
         storm: {
@@ -3773,6 +3897,7 @@
             { title: "Expert Adjuster Meetings", detail: "We ensure no damage is overlooked by your carrier." }
           ],
           cta: "File a Claim Help",
+          url: "https://www.myroofimprovement.com/roof-insurance-claims/",
           image: "https://www.myroofimprovement.com/wp-content/uploads/2023/07/Roof-insurance-claim-inspection.webp"
         },
         financing: {
@@ -3783,6 +3908,7 @@
             { title: "Instant Approval", detail: "Quick digital process with no hidden fees." }
           ],
           cta: "Apply for Financing",
+          url: "https://www.myroofimprovement.com/roof-financing-houston/",
           image: "https://www.myroofimprovement.com/wp-content/uploads/2026/05/Roof-Replacement-and-Repair-Cost-in-Tomball-TX.png"
         }
       };
@@ -3811,6 +3937,7 @@
             document.getElementById('tab-title').textContent = data.title;
             document.getElementById('tab-description').textContent = data.description;
             document.getElementById('tab-cta').textContent = data.cta;
+            document.getElementById('tab-cta').href = data.url;
             document.getElementById('tab-image').src = data.image;
 
             const bulletContainer = document.getElementById('tab-bullets');
@@ -3914,9 +4041,9 @@
               <span class="material-symbols-outlined text-slate-300">chevron_right</span>
             </a>
 
-            <!-- Instant Calculator -->
-            <a href="https://www.myroofimprovement.com/roof-replacement-cost-estimate/"
-              class="flex items-center gap-4 p-5 bg-slate-50 hover:bg-slate-100 rounded-2xl transition-all group">
+            <!-- Instant Calculator (Triggers Roofr Popup) -->
+            <button id="open-roofr-view"
+              class="flex items-center gap-4 p-5 bg-slate-50 hover:bg-slate-100 rounded-2xl transition-all group w-full text-left">
               <div
                 class="w-12 h-12 bg-secondary-container/10 rounded-full flex items-center justify-center text-secondary-container group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined">calculate</span>
@@ -3926,21 +4053,19 @@
                 <div class="text-xs text-on-surface-variant font-medium">Get a quick estimate online</div>
               </div>
               <span class="material-symbols-outlined text-slate-300">chevron_right</span>
-            </a>
+            </button>
 
-            <!-- Roofr Estimator (Trigger) -->
-            <button id="open-roofr-view"
-              class="flex items-center gap-4 p-5 bg-slate-50 hover:bg-slate-100 rounded-2xl transition-all group w-full text-left">
-              <div
-                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined">rocket_launch</span>
+            <!-- Schedule Inspection (Static - no link) -->
+            <div class="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">calendar_add_on</span>
               </div>
               <div class="flex-grow">
-                <div class="font-bold text-on-surface">Roofr Estimator</div>
+                <div class="font-bold text-on-surface">Schedule a Roofing Inspection</div>
                 <div class="text-xs text-on-surface-variant font-medium">Professional roofing assessment</div>
               </div>
               <span class="material-symbols-outlined text-slate-300">chevron_right</span>
-            </button>
+            </div>
           </div>
 
           <p class="text-[10px] text-center text-slate-400 font-bold uppercase tracking-widest">
